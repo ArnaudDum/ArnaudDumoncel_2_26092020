@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 1024px) and (min-width: 600px)" href="tablette.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="smartphone.css"/>
+        <script src="https://kit.fontawesome.com/85ef19a200.js" crossorigin="anonymous"></script>
+        <title>Reservia</title>
+    </head>
+    
+    <body>
+        
+        <header>
+            <img src="images/logo/Reservia.svg" alt="logo reservia"/>
+            <nav>
+                <ul>
+                    <li id="navheb"><a href="#hebergements">Hébergements</a></li>
+                    <li id="navacti"><a href="#activites">Activités</a></li>
+                    <li id="navsub"><a href="" style="color:#0065FC ; font-weight: bold ">S'inscrire</a> </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="recherche">
+            <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            
+            <form method="post" action="traitement.php">
+                <p>
+                    <label for="ville"><i class="fas fa-map-marker-alt"></i></label>
+                    <input type="search" name="ville" id="ville" placeholder="Marseille, France"/>
+                    <input type="submit" value="Rechercher" id="bouton"/>
+                </p>
+            </form>
+            
+            <div id="filtres">
+                <h4>Filtres</h4>
+                <div>
+                    <i class="fas fa-money-bill-wave" style="color: #0065FC"></i>
+                    <input type="button" value="Économique"/>
+                </div>
+                <div>
+                    <i class="fas fa-child" style="color: #0065FC"></i>
+                    <input type="button" value="Familial"/>
+                </div>
+                <div>
+                    <i class="fas fa-heart" style="color: #0065FC"></i>
+                    <input type="button" value="Romantique"/>
+                </div>
+                <div>
+                    <i class="fas fa-dog" style="color: #0065FC"></i>
+                    <input type="button" value="Animaux autorisés"/>
+                </div>
+            </div>
+            <p><i class="fas fa-info-circle" style="color: #0065FC"></i>  Plus de 500 logements sont disponibles dans cette ville</p>
+        </section>
+        
+        <section id="hebergements">
+            <div id="main">
+                <h2>Hébergements à Marseille</h2>
+                <div id="cards">
+                    
+                    <a href="#">
+                        <article class="hebcard" id="cannebiere">
+                            <div class="overlay">
+                                <h3>Auberge la Cannebière</h3>
+                                <p>Nuit à partir de 25€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="#">
+                        <article class="hebcard" id="port">
+                            <div class="overlay">
+                                <h3>Hôtel du port</h3>
+                                <p>Nuit à partir de 52€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="#">
+                        <article class="hebcard" id="mouettes">
+                            <div class="overlay">
+                                <h3>Hôtel Les Mouettes</h3>
+                                <p>Nuit à partir de 76€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="#">
+                        <article class="hebcard" id="mer">
+                            <div class="overlay">
+                                <h3>Hôtel de La Mer</h3>
+                                <p>Nuit à partir de 46€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="#">
+                        <article class="hebcard" id="panier">
+                            <div class="overlay">
+                                <h3>Auberge Le Panier</h3>
+                                <p>Nuit à partir de 23€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="#">
+                        <article class="hebcard" id="amina">
+                            <div class="overlay">
+                                <h3>Hôtel Chez Amina</h3>
+                                <p>Nuit à partir de 96€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                </div>
+                <p style="font-weight: bold"><a href="">Afficher plus</a></p>
+            </div>
+            <div id="pop">
+                <div id="poptop">
+                    <h2>Les plus populaires</h2>
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div id="popcontent">
+                    
+                    <a href="">
+                        <article id="soleil" class="popcard">
+                            <div class="popoverlay">
+                                <h3>Hôtel Le Soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="">
+                        <article id="coeur" class="popcard">
+                            <div class="popoverlay">
+                                <h3>Au Coeur de l'eau Chambres d'hôtes</h3>
+                                <p>Nuit à partir de 71€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                    <a href="">
+                        <article id="bleu" class="popcard">
+                            <div class="popoverlay">
+                                <h3>Hôtel Tout Bleu et Blanc</h3>
+                                <p>Nuit à partir de 68€</p>
+                                <p>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                </p>
+                            </div>
+                        </article>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section id="activites">
+            
+            <h2>Activités à Marseille</h2>
+            
+            <div id="acti">
+                
+                    <a href="">
+                        <article id="vieuxport" class="acticard"> 
+                                <h3 class="actoverlay">Vieux Port</h3>
+                        </article>
+                    </a>
+
+                    <a href="">
+                        <article id="pomegues" class="acticard">
+                                <h3 class="actoverlay">Fort de Pomègues</h3>
+                        </article>
+                    </a>
+                
+                    <a href="">
+                        <article id="frioul" class="acticard">
+                                <h3 class="actoverlay">Îles du Frioul</h3>
+                        </article>
+                    </a>
+                    
+                    <a href="">
+                        <article id="calanques" class="acticard">
+                                <h3 class="actoverlay">Parc National des Calanques</h3>
+                        </article>
+                    </a>
+
+                    <a href="">
+                        <article id="ndg" class="acticard">
+                                <h3 class="actoverlay">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+
+                    <a href="">
+                        <article id="longchamp" class="acticard">
+                                <h3 class="actoverlay">Parc Longchamp</h3>
+                        </article>
+                    </a>
+                
+            </div>
+            
+        </section>
+        
+        <footer>
+            <div>
+                <h4>A propos</h4>
+                <p><a href="">Fonctionnement du site</a></p>
+                <p><a href="">Conditions générales de vente</a></p>
+                <p><a href="">Données et confidentialité</a></p>
+            </div>
+            <div>
+                <h4>Nos hébergements</h4>
+                <p><a href="">Charte qualité</a></p>
+                <p><a href="">Soumettre votre hôtel</a></p>
+            </div>
+            <div>
+                <h4>Assistance</h4>
+                <p><a href="">Centre d'aide</a></p>
+                <p><a href="">Nous contacter</a></p>
+            </div>
+        </footer>
+        
+    </body>
+    
+</html>

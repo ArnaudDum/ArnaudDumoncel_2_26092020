@@ -1,0 +1,436 @@
+/* POLICE */
+
+
+
+
+
+@font-face {
+    font-family:"Raleway";
+    src:url(Raleway-Regular.ttf);
+}
+
+* {
+    font-family: "Raleway";
+}
+
+
+
+
+
+
+/* GENERAL */
+
+
+
+
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+
+
+/* HEADER */
+
+
+
+
+
+header {
+    height: 100px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    font-size: 1.2em;
+}
+
+nav ul li a {
+    padding:45px;
+}
+
+nav ul li a:hover {
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+}
+
+
+
+
+/* SECTION RECHERCHE */
+
+
+
+
+
+#recherche {
+    padding: 30px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+form p {
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+}
+
+form p input {
+    height: 50px;
+}
+
+form p label {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background-color: #F2F2F2;
+    padding: 17px;
+}
+
+#ville {
+    border: none;
+    font-weight: bold;
+    width: 180px;
+}
+
+#bouton {
+    background-color: #0065FC;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    border: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+
+
+/* PARTIE FILTRES */
+
+
+
+
+
+#filtres {
+    display: flex;
+}
+
+#filtres div {
+    margin-left: 60px;
+    border: solid #F2F2F2 2px;
+    border-radius: 30px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#filtres div input {
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 6px;
+}
+
+#filtres i {
+    border-radius: 30px;
+    background-color: #DEEBFF;
+    height:45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+/* SECTION HEBERGEMENTS */
+
+
+
+
+
+
+#hebergements {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#main {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 950px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#cards a {
+    margin: 15px;
+}
+
+.hebcard {
+    width: 250px;
+    height: 200px;
+    border: solid white 4px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background-color: white;
+    box-sizing: content-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width:100%;
+    position: absolute;
+    top: 110px;
+}
+
+.overlay h3 {
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+.overlay p {
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+.overlay p i {
+    font-size:0.9em;
+}
+
+#cannebiere {
+    background-image: url(images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+#port {
+    background-image: url(images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+#mouettes {
+    background-image: url(images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+#mer {
+    background-image: url(images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+#panier {
+    background-image: url(images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+#amina {
+    background-image: url(images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+
+#pop {
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 400px;
+}
+
+#poptop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+#popcontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px;
+}
+
+.popcard {
+    width: 330px;
+    height: 150px;
+    border: solid white 4px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.popoverlay {
+    background-color: white;
+    box-sizing: content-box;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height:100%;
+    width: 190px;
+    position: absolute;
+    left: 143px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.popoverlay h3 {
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+.popoverlay p {
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+.popoverlay p i {
+    font-size:0.9em;
+}
+
+#soleil {
+    background-image: url(images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+}
+
+#coeur {
+    background-image: url(images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+
+#bleu {
+    background-image: url(images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+
+
+
+
+
+/* SECTION ACTIVITES */
+
+
+
+
+
+#activites {
+    padding: 30px;
+}
+
+#acti {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 580px;
+}
+
+#acti a {
+    margin: 15px;
+}
+
+.acticard {
+    width: 330px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 10px #F2F2F2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.actoverlay {
+    background-color: white;
+    height: 40px;
+    align-items: center;
+}
+
+.actoverlay h3 {
+    text-align: center;
+}
+
+#vieuxport {
+    background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    height: 520px;
+}
+
+#pomegues {
+    background-image: url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    height: 260px;
+}
+
+#frioul {
+    background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    height: 210px;
+}
+
+#calanques {
+    background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    height: 520px;
+}
+
+#ndg {
+    background-image: url(images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    height: 210px;
+}
+
+#longchamp {
+    background-image: url(images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    height: 260px;
+}
+
+
+
+
+
+/* FOOTER */
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    height: 180px;
+    padding: 30px;
+}
+
+footer h4 {
+    font-weight: bold;
+}
+
+footer div {
+    width: 33%;
+}

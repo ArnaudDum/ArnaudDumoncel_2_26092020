@@ -1,0 +1,73 @@
+/* FILTRES */
+
+#filtres {
+    flex-wrap: wrap;
+}
+
+/* HEBERGEMENTS */
+
+#hebergements {
+    flex-wrap: wrap;
+}
+
+#pop {
+    margin: auto;
+    margin-top: 30px;
+    width: 950px;
+}
+
+#poptop {
+    justify-content: space-around
+}
+
+#popcontent {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 70px
+}
+
+/* ACTIVITES */
+
+#acti {
+    width: auto;
+    height: auto;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.acticard {
+    position: relative;
+}
+
+#vieuxport {
+    height: 250px;
+}
+
+#pomegues {
+    height: 250px;
+}
+
+#frioul {
+    height: 250px;
+}
+
+#calanques {
+    height: 250px;
+}
+
+#ndg {
+    height: 250px;
+}
+
+#longchamp {
+    height: 250px;
+}
+
+.actoverlay {
+    position: absolute;
+    top: 192px;
+    width: 100%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
