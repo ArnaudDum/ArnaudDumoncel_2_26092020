@@ -17,7 +17,11 @@
 }
 
 #poptop {
-    justify-content: space-around
+    justify-content: flex-start;
+}
+
+#poptop i {
+    margin-left: 50px;
 }
 
 #popcontent {
