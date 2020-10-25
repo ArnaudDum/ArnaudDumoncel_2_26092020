@@ -147,12 +147,17 @@ form p label {
     padding-right: 10px;
 }
 
+#filtres div:hover{
+    background-color: #0065FC;
+}
+
 #filtres div input {
     background-color: white;
     border: none;
     font-weight: bold;
     font-size: 1em;
     padding: 6px;
+    border-radius: 30px;
 }
 
 #filtres i {
@@ -212,6 +217,7 @@ form p label {
     background-position: bottom;
     background-repeat: no-repeat;
     position: relative;
+    box-shadow: 1px 1px 12px grey;
 }
 
 .overlay {
@@ -293,6 +299,7 @@ form p label {
     background-repeat: no-repeat;
     position: relative;
     margin-bottom: 30px;
+    box-shadow: 1px 1px 12px grey;
 }
 
 .popoverlay {
@@ -363,7 +370,7 @@ form p label {
 .acticard {
     width: 330px;
     border-radius: 15px;
-    box-shadow: 8px 8px 10px #F2F2F2;
+    box-shadow: 8px 8px 5px #F2F2F2;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -373,6 +380,9 @@ form p label {
     background-color: white;
     height: 40px;
     align-items: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 10px
 }
 
 .actoverlay h3 {
