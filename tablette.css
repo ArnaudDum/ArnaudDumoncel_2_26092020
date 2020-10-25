@@ -10,6 +10,10 @@
     flex-wrap: wrap;
 }
 
+#main {
+    margin: auto;
+}
+
 #pop {
     margin: auto;
     margin-top: 30px;
