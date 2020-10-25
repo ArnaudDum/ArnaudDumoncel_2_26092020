@@ -71,7 +71,9 @@
 .actoverlay {
     position: absolute;
     top: 192px;
-    width: 100%;
+    width: 97%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
